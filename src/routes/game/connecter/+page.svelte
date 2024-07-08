@@ -28,7 +28,7 @@
   async function handleThemeChange(event) {
     selectedTheme = event.target.value;
     // Requête à l'API pour récupérer les questions du thème sélectionné.
-    const response = await fetch(`https://guesswhat-api.onrender.com/theme/${selectedTheme}`);
+    const response = await fetch(`https://guess-what-back-lih7.onrender.com/theme/${selectedTheme}`);
     if (response.ok) {
       const data = await response.json();
       questions = data.riddles.map(question => ({
@@ -75,7 +75,7 @@
     };
     try {
       // Envoi des données de score à l'API.
-      const response = await fetch('https://guesswhat-api.onrender.com/user/play', {
+      const response = await fetch('https://guess-what-back-lih7.onrender.com/user/play', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

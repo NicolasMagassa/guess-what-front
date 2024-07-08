@@ -6,7 +6,7 @@
 
     async function getquestionfromtheme ( id ) { 
         console.log(id);
-    const questions = await fetch (`https://guesswhat-api.onrender.com/theme/${id}`, {
+    const questions = await fetch (`https://guess-what-back-lih7.onrender.com/theme/${id}`, {
     method: "GET",
     
     headers: {
@@ -28,7 +28,7 @@ const actions = {
       const theme = data.get ('theme')     
       const token = cookies.get("token");
       
-      const deletedevi = await fetch (`https://guesswhat-api.onrender.com/admin/theme/${id}/riddle/${id}`, {
+      const deletedevi = await fetch (`https://guess-what-back-lih7.onrender.com/admin/theme/${id}/riddle/${id}`, {
          method: "DELETE",
          headers: {
           "Content-Type": "application/json",

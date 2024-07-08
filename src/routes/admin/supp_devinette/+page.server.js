@@ -7,7 +7,7 @@ if (!token) {
     redirect(303, '/');
 }
 // affichage des thèmes dans la liste déroulante
-const reponse = await fetch ('https://guesswhat-api.onrender.com/themes', {
+const reponse = await fetch ('https://guess-what-back-lih7.onrender.com/themes', {
            method: "GET",
            headers: {
             "Content-Type": "application/json",
@@ -32,7 +32,7 @@ export const actions = {
       const devinette = data.get ('devinette')     
       const token = cookies.get("token");
       
-      const deletedevi = await fetch (`https://guesswhat-api.onrender.com/admin/theme/${theme}/riddle/${devinette}`, {
+      const deletedevi = await fetch (`https://guess-what-back-lih7.onrender.com/admin/theme/${theme}/riddle/${devinette}`, {
          method: "DELETE",
          headers: {
           "Content-Type": "application/json",

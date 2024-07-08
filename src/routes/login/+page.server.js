@@ -13,7 +13,7 @@ export const actions = {
         const password = data.get('password');
 
         // Envoi d'une requête POST à l'API pour l'authentification de l'utilisateur.
-        const reponse = await fetch('https://guesswhat-api.onrender.com/signin', {
+        const reponse = await fetch('https://guess-what-back-lih7.onrender.com/signin', {
             method: "POST", // Utilisation de la méthode POST pour envoyer des données.
             headers: {
                 "Content-Type": "application/json", // Définition du type de contenu envoyé.

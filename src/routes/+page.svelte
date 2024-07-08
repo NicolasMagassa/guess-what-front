@@ -20,7 +20,7 @@
     
  //  Appel à une API pour récupérer le classement par thème.
  // Utiliser HTTPS pour sécuriser la requête.
-    const result = await fetch(`https://guesswhat-api.onrender.com/theme/${themeId}/leaderboard`);
+    const result = await fetch(`https://guess-what-back-lih7.onrender.com/theme/${themeId}/leaderboard`);
 
 
  //Conversion de la réponse de l'API en JSON et stockage dans 'scores'.

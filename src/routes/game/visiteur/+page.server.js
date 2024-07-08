@@ -12,7 +12,7 @@ export async function load() {
     // console.log(cookies.get("token"));
 
     // Envoie une requête GET à l'API pour récupérer les thèmes.
-    const reponse = await fetch('https://guesswhat-api.onrender.com/themes', {
+    const reponse = await fetch('https://guess-what-back-lih7.onrender.com/themes', {
         method: "GET", // Spécifie la méthode HTTP à utiliser (GET pour récupérer des données).
         headers: {
             "Content-Type": "application/json", // Définit le type de contenu attendu en réponse (JSON dans ce cas).

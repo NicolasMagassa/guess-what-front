@@ -7,7 +7,7 @@ import { redirect } from '@sveltejs/kit';
 export async function load() {
   // Requête GET envoyée à une API pour récupérer des données de thèmes.
   // Utilisation de 'fetch' pour faire une requête HTTP vers l'URL spécifiée.
-  const reponse = await fetch('https://guesswhat-api.onrender.com/themes', {
+  const reponse = await fetch('https://guess-what-back-lih7.onrender.com/themes', {
     method: "GET", // Méthode HTTP GET pour récupérer des données.
     headers: {
       "Content-Type": "application/json", // Spécification du format des données attendues (JSON).

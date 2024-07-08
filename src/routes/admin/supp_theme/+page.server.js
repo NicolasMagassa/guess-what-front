@@ -7,7 +7,7 @@ if (!token) {
     redirect(303, '/');
 }
 // affichage des thèmes dans la liste déroulante
-const reponse = await fetch ('https://guesswhat-api.onrender.com/themes', {
+const reponse = await fetch ('https://guess-what-back-lih7.onrender.com/themes', {
            method: "GET",
            headers: {
             "Content-Type": "application/json",
@@ -31,7 +31,7 @@ export const actions = {
       const theme = data.get ('theme')     
       const token = cookies.get("token");
       //console.log(answers);
-      const deletetheme = await fetch (`https://guesswhat-api.onrender.com/admin/theme/${theme}`, {
+      const deletetheme = await fetch (`https://guess-what-back-lih7.onrender.com/admin/theme/${theme}`, {
          method: "DELETE",
          headers: {
           "Content-Type": "application/json",

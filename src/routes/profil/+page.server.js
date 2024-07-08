@@ -27,7 +27,7 @@ export async function load({ cookies }) {
     console.log(cookies.get("token"));
 
     // Requête GET à l'API pour récupérer les informations du profil de l'utilisateur.
-    const affprofil = await fetch(`https://guesswhat-api.onrender.com/user/profile/${decoded.id}`, {
+    const affprofil = await fetch(`https://guess-what-back-lih7.onrender.com/user/profile/${decoded.id}`, {
         method: "GET", // Utilisation de la méthode GET pour récupérer des données.
         headers: {
             "Content-Type": "application/json", // Définition du type de contenu attendu.

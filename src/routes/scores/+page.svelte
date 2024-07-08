@@ -12,7 +12,7 @@
     const themeId = event.target.value; // Récupération de l'ID du thème sélectionné.
 
     // Requête à l'API pour récupérer les scores maximums pour le thème sélectionné.
-    const result = await fetch(`https://guesswhat-api.onrender.com/user/theme/${themeId}/play`, {
+    const result = await fetch(`https://guess-what-back-lih7.onrender.com/user/theme/${themeId}/play`, {
       headers: {
         "Content-Type": "application/json",
         "Authorization": `Bearer ${data.token}` // Inclusion du token d'authentification dans les en-têtes.
@@ -59,7 +59,7 @@
         {#each scores as score, index}
           <tr>
             <td>{index + 1}</td>
-            <td>{score.player.username}</td> <!-- Affichage du pseudo du joueur -->
+            <td>{score.username}</td> <!-- Affichage du pseudo du joueur -->
             <td>{score.maxScore}</td>
             <td>{score.count_indicators}</td>
             <td>{score.errors}</td>

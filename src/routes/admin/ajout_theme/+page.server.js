@@ -3,7 +3,7 @@ export const actions = {
         const data = await request.formData();
         const name = data.get ('name')
         const token = cookies.get("token");
-        const reponse = await fetch ('https://guesswhat-api.onrender.com/admin/theme', {
+        const reponse = await fetch ('https://guess-what-back-lih7.onrender.com/admin/theme', {
            method: "POST",
            headers: {
             "Content-Type": "application/json",

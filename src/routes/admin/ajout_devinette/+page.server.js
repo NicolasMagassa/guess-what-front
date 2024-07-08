@@ -7,7 +7,7 @@ if (!token) {
     redirect(303, '/');
 }
 // affichage des thèmes dans la liste déroulante
-const reponse = await fetch ('https://guesswhat-api.onrender.com/themes', {
+const reponse = await fetch ('https://guess-what-back-lih7.onrender.com/themes', {
            method: "GET",
            headers: {
             "Content-Type": "application/json",
@@ -50,7 +50,7 @@ export const actions = {
       const wiki = data.get ('wiki')   // lien wiki
       const token = cookies.get("token");
       //console.log(answers);
-      const reponse = await fetch (`https://guesswhat-api.onrender.com/admin/theme/${theme}/riddle`, {
+      const reponse = await fetch (`https://guess-what-back-lih7.onrender.com/admin/theme/${theme}/riddle`, {
          method: "POST",
          headers: {
           "Content-Type": "application/json",
